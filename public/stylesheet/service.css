@@ -1,0 +1,11 @@
+ 
+    :root{--bg:#071021;--muted:#9aa4b2;--accent:#6ee7b7;--accent-2:#60a5fa;--radius:12px;font-family:Inter,system-ui,Roboto,Arial}
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,var(--bg),#071629);color:#e6eef6;min-height:100vh}
+    .wrap{max-width:1000px;margin:36px auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+    .svc{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:16px;border-radius:12px}
+    .svc h3{margin:0 0 8px 0}
+    footer{margin-top:20px;color:var(--muted);text-align:center}
+  

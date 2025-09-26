@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — MiniShop</title>
+ <link rel="stylesheet" href="./stylesheet/service.css" >
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#042025;font-weight:700">MS</div>
+        <div><strong>MiniShop</strong><div style="font-size:12px;color:var(--muted)">Services</div></div>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/service">Services</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 style="margin-top:18px">Our Services</h1>
+      <div class="grid">
+        <div class="svc">
+          <h3>E-commerce Setup</h3>
+          <p style="color:var(--muted)">Quick store scaffolding with products, cart and checkout integration guidance.</p>
+        </div>
+        <div class="svc">
+          <h3>UI/UX Design</h3>
+          <p style="color:var(--muted)">Clean, responsive designs with accessibility in mind.</p>
+        </div>
+        <div class="svc">
+          <h3>API Integration</h3>
+          <p style="color:var(--muted)">Payment, shipping and third-party services integration.</p>
+        </div>
+        <div class="svc">
+          <h3>Deployment</h3>
+          <p style="color:var(--muted)">Help deploying to VPS, Heroku, Railway or other providers.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>&copy; <%= new Date().getFullYear() %> MiniShop</footer>
+  </div>
+</body>
+</html>

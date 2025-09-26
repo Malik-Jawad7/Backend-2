@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — MiniShop</title>
+  <link rel="stylesheet" href="./stylesheet/contact.css" >
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#042025;font-weight:700">MS</div>
+        <div><strong>MiniShop</strong><div style="font-size:12px;color:var(--muted)">Contact</div></div>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/service">Services</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 style="margin-top:18px">Get in touch</h1>
+      <p style="color:var(--muted)">Have questions or feedback? Send us a message below.</p>
+
+      <form id="contactForm" method="post" action="/contact">
+        <div class="row">
+          <div><label class="sr-only">Name<input name="name" required placeholder="Your name" /></label></div>
+          <div><label class="sr-only">Email<input type="email" name="email" required placeholder="you@example.com" /></label></div>
+        </div>
+        <div>
+          <label class="sr-only">Message<textarea name="message" required placeholder="Your message"></textarea></label>
+        </div>
+
+        <div style="display:flex;gap:10px;align-items:center">
+          <button type="submit" class="btn">Send Message</button>
+          <div id="status" class="status"></div>
+        </div>
+      </form>
+    </main>
+
+    <footer style="margin-top:18px;color:var(--muted)">Or email us at <a href="mailto:hello@minishop.local" style="color:var(--accent-2)">hello@minishop.local</a></footer>
+  </div>
+
+  <script>
+    // small client-side UX: prevent default submit if server-side not implemented,
+    // show friendly message (you can remove this if you have POST route)
+    (function(){
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('status');
+      form.addEventListener('submit', function(e){
+        // If you have a server POST /contact, remove the following block.
+        e.preventDefault();
+        status.textContent = 'Sending...';
+        setTimeout(()=> {
+          status.textContent = 'Message sent (demo).';
+          form.reset();
+        }, 900);
+      });
+    })();
+  </script>
+</body>
+</html>

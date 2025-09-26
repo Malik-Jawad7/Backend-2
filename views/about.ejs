@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — MiniShop</title>
+  <link rel="stylesheet" href="/stylesheet/about.css" >
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#042025;font-weight:700">MS</div>
+        <div><strong>MiniShop</strong><div style="font-size:12px;color:var(--muted)">About us</div></div>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/service">Services</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>About MiniShop</h1>
+      <p>MiniShop is a lightweight demo showcasing an Express + EJS setup. It's meant for learning, prototyping and quick demos.</p>
+
+      <div class="team" aria-label="team">
+        <div class="member"><strong>Khalid</strong><div style="color:var(--muted)">Founder</div></div>
+        <div class="member"><strong>Salma</strong><div style="color:var(--muted)">Designer</div></div>
+        <div class="member"><strong>Bilal</strong><div style="color:var(--muted)">Developer</div></div>
+      </div>
+    </section>
+
+    <footer>&copy; <%= new Date().getFullYear() %> MiniShop — built with Express</footer>
+  </div>
+</body>
+</html>

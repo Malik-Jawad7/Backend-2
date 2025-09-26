@@ -37,7 +37,6 @@ app.get('/service', (req, res) => {
   res.render('service'); // views/service.ejs
 });
 
-
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 }); 
